@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+
+            <div class="user">
+                <div class="user__avatar">
+                    <img src="https://placehold.it/57/333" alt="">
+                </div>
+                <div class="user__content">
+                    <div class="user__name">
+                        Артёменко<br>Алексей
+                    </div>
+                    <div class="user__prof">Программист</div>
+                </div>
+            </div>
+
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#">Работы</a>
+                <a class="nav__link" href="#">Обо мне</a>
+                <a class="nav__link" href="#">Блог</a>
+                <a class="nav__link" href="#">Контакты</a>
+                <a class="nav__link  nav__link--btn" href="#" data-modal="#modal_hire_me">Свяжись со мной</a>
+            </nav>
+
+            <button class="burger" type="button" id="navToggle">
+                <img class="burger__icon" src="images/burger.svg" alt="">
+            </button>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- Intro -->
+<section class="intro">
+    <div class="container">
+
+        <div class="intro__inner">
+            <div class="intro__content">
+                <h2 class="intro__subtitle">Привет, я</h2>
+                <h1 class="intro__title">Артёменко Алексей</h1>
+                <div class="intro__text">Программист, Дизайнер</div>
+
+                <div class="social">
+                    <a class="social__link" href="https://vk.com/artemenko1ar">
+                        <img src="C:\Users\79098\Desktop\финальный\images/Вк.jpg" alt="">
+                    </a>
+                    <a class="social__link" href="https://t.me/pelfik">
+                        <img src=C:\Users\79098\Desktop\финальный\images/телеграмм.jpg alt="">
+                    </a>
+                    <a class="social__link" href="https://www.instagram.com/alexey1artemenko/">
+                        <img src="C:\Users\79098\Desktop\финальный\images/инстаграмм.jpg" alt="">
+                    </a>
+                </div>
+
+                <a class="btn" href="#" data-modal="#modal_hire_me">Связь со мной</a>
+                <button class="btn" type="button" data-modal="#modal_resume">Моё резюме</button>
+            </div>
+
+            <img class="intro__photo" src="images/photo.png" alt="">
+        </div><!-- /.intro__inner -->
+
+    </div><!-- /.container -->
+</section>
+
+
+
+<!-- Works -->
+<div class="works">
+    <div class="container">
+
+        <div class="works__nav">
+            <a class="works__nav-link" href="#" data-filter="all">Все</a>
+            <a class="works__nav-link" href="#" data-filter="Приложения">Приложения</a>
+            <a class="works__nav-link" href="#" data-filter="Сайты">Сайты</a>
+            <a class="works__nav-link" href="#" data-filter="Дизайн">Дизайн</a>
+        </div>
+
+
+        <div class="portfolio" id="portfolio">
+            <div class="portfolio__col" data-cat="Приложения">
+                <div class="work" data-modal="#modal_project_1">
+                    <img class="work__image" src="" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Категория: Приложения</div>
+                        <div class="work__title">
+                            "Бот погода"
+                            <time class="work__date" datetime="2019-11-22 19:00">2022</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="Приложения">
+                <div class="work" data-modal="#modal_project_2">
+                    <img class="work__image" src="https://placehold.it/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Категория: Приложения</div>
+                        <div class="work__title">
+                            "СПАМ БОТ"
+                            <time class="work__date" datetime="2019-11-22 19:00">2022</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="Сайты">
+                <div class="work" data-modal="#modal_project_3">
+                    <img class="work__image" src="https://placehold.it/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Категория: Сайты</div>
+                        <div class="work__title">
+                            "Сайт портфолио"
+                            <time class="work__date" datetime="2019-11-22 19:00">2022</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="Сайты">
+                <div class="work" data-modal="#modal_project_4">
+                    <img class="work__image" src="https://placehold.it/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Категория: Сайты</div>
+                        <div class="work__title">
+                            "Первый созданый сайт"
+                            <time class="work__date" datetime="2019-11-22 19:00">2021</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="Приложения">
+                <div class="work" data-modal="#modal_project_5">
+                    <img class="work__image" src="https://placehold.it/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Категория: Игры</div>
+                        <div class="work__title">
+                            "Игра Bublle jump by lexa"
+                            <time class="work__date" datetime="2021-11-22 00:00">2021</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="Дизайн">
+                <div class="work" data-modal="#modal_project_6">
+                    <img class="work__image" src="https://placehold.it/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Категория: Дизайн</div>
+                        <div class="work__title">
+                            Превью для блогеров
+                            <time class="work__date" datetime="2022-00-00 19:00">2022</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio__col" data-cat="Дизайн">
+                <div class="work" data-modal="#modal_project_7">
+                    <img class="work__image" src="https://placehold.it/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Категория: Дизайн</div>
+                        <div class="work__title">
+                            Логотипы
+                            <time class="work__date" datetime="2022-00-00 00:00">2022</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio__col" data-cat="Дизайн">
+                <div class="work" data-modal="#modal_project_8">
+                    <img class="work__image" src="https://placehold.it/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Категория: Дизайн</div>
+                        <div class="work__title">
+                            Иллюстрации/Рисунки
+                            <time class="work__date" datetime="2022-00-00 00:00">2022</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div><!-- /.portfolio -->
+
+        <div class="text-center">
+            <a class="btn  btn--sm" href="#">Другие работы</a>
+        </div>
+
+    </div><!-- /.container -->
+</div><!-- /.works -->
+
+
+
+<!-- About -->
+<section class="about">
+    <div class="container">
+
+        <div class="about__inner">
+            <div class="about__photo">
+                <img class="img" src="images/designer_photo.png" alt="">
+            </div>
+
+            <div class="about__content">
+                <h3 class="about__title">ОБО МНЕ</h3>
+                <h2 class="about__bigtitle">КТО Я ТАКОЙ?!</h2>
+                <div class="about__text">
+                    <p>Привет, я Лёша. Учесь в Амурском педагогическом колледже. Занимаюсь дизайном логотипов, визиток, различными иллюстрациями и рисунками! Имею начальные знания Phyton, html/css, unity</p>
+                </div>
+                <a class="btn" href="#">НАПИШИ МНЕ</a>
+                <button class="btn" type="button">МОЁ РЕЗЮМЕ</button>
+            </div><!-- /.about__content -->
+        </div><!-- /.about__inner -->
+
+    </div><!-- /.container -->
+</section>
+
+
+<!-- slader -->
+<section class="news">
+    <div class="container">
+
+        <div class="news__header">
+            <h3 class="news__title">МОИ ДОСТИЖЕНИЯ</h3>
+        </div>
+        <body>
+       <title>Слайдер на CSS</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="all">
+		<input checked type="radio" name="respond" id="desktop">
+			<article id="slider">
+					<input checked type="radio" name="slider" id="switch1">
+					<input type="radio" name="slider" id="switch2">
+					<input type="radio" name="slider" id="switch3">
+					<input type="radio" name="slider" id="switch4">
+					<input type="radio" name="slider" id="switch5">
+					<input type="radio" name="slider" id="switch6">
+				<div id="slides">
+					<div id="overflow">
+						<div class="image">
+							<article><img src="C:\Users\79098\Desktop\финальный\Gramota/99.jpg"></article>
+							<article><img src="C:\Users\79098\Desktop\финальный\Gramota/100.jpg"></article>
+							<article><img src="C:\Users\79098\Desktop\финальный\Gramota/999.jpg"></article>
+							<article><img src="C:\Users\79098\Desktop\финальный\Gramota/111.jpg"></article>
+						</div>
+					</div>
+				</div>
+				<div id="controls">
+					<label for="switch1"></label>
+					<label for="switch2"></label>
+					<label for="switch3"></label>
+					<label for="switch4"></label>
+					<label for="switch5"></label>
+				</div>
+				<div id="active">
+					<label for="switch2"></label>
+					<label for="switch3"></label>
+					<label for="switch4"></label>
+					<label for="switch5"></label>
+					<label for="switch6"></label>
+				</div>
+			</article>
+	</div>
+</body>
+
+        </div><!-- /.articles -->
+
+        <div class="news__footer">
+            <a class="news__link" href="#"></a>
+        </div>
+        
+
+    </div><!-- /.container -->
+</section>
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer__inner">
+            <div class="footer__credits">
+                <div class="footer__copyright">
+                    &copy; 2022 портфолио - Артёменко Алексей
+                </div>
+
+                <div class="footer__social">
+                    <a href="https://vk.com/artemenko1ar" target="_blank">
+                        <img src="C:\Users\79098\Desktop\финальный\images/vk (1).png" width="24" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/alexey1artemenko/" target="_blank">
+                        <img src="C:\Users\79098\Desktop\финальный\images/instagram.png" width="18" alt="">
+                    </a>
+                    <a href="https://t.me/pelfik" target="_blank">
+                        <img src="C:\Users\79098\Desktop\финальный\images/telegram.png" width="18" alt="">
+                    </a>
+                </div>
+            </div><!-- /.footer__credits -->
+
+            <nav class="footer__nav">
+                <a class="footer__nav-link" href="#">Работы</a>
+                <a class="footer__nav-link" href="#">Обо мне</a>
+                <a class="footer__nav-link" href="#">Блог</a>
+                <a class="footer__nav-link" href="#">Контакты</a>
+                <a class="footer__nav-link  footer__nav-link--btn" href="#">Связь со мной</a>
+            </nav>
+        </div><!-- /.footer__inner -->
+
+    </div><!-- /.container -->
+</footer>
+
+
+
+
+
+<!-- Modals -->
+<div class="modal" id="modal_project_1">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="C:\Users\79098\Desktop\финальный\images/close.png" alt="Close">
+        </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="C:\Users\79098\Desktop\финальный\images/Превью погода.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="C:\Users\79098\Desktop\финальный\images/Код погоды 1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Бот Погоды в "Телеграмм"</h3>
+                    <div class="modal-work__info">
+                        приложения <span class="modal-work__info-divider">|</span> 2022
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Описание:</div>
+                    <div class="modal-work__client-company"></div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p>Бот-метеоролог НА PYTHON.</p>
+                    <p> Бот в телеграмме в котором вы можете узнать погоду в вашем городе.</p>
+                    <p>Для его создания мы импортировали библиотеки "telebot" "requests" "json". И написали несложный код. 
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/back.svg" height="11" alt="">
+                        Назад
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Далее
+                        <img src="images/next.svg" height="11" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /.modal-work__content -->
+        </div><!--/.modal-work -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal" id="modal_project_2">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="C:\Users\79098\Desktop\финальный\images/close.png" alt="Close">
+        </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src='C:\Users\79098\Desktop\финальный\images/Без имени-2.jpg' alt="">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="C:\Users\79098\Desktop\финальный\images/Без имени-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">СПАМ-БОТ</h3>
+                    <div class="modal-work__info">
+                        Приложения <span class="modal-work__info-divider">|</span> 2022
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Описание:</div>
+                    <div class="modal-work__client-company"></div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p>Спам бот написанный 5 строками кода. Множественная отправка тех сообщений, которые вы прописали в блокноте, пользователю.
+                    Добавлен модуль pyautogui, который добавляет возможность печатать текст на экране и кликать на экране.
+                    Сообщения отпавляються через текстовой файл,в котором написаны ваши сообщения пользователю.
+                    typewrite </p>
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/back.svg" height="11" alt="">
+                        Назад
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Далее
+                        <img src="images/next.svg" height="11" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /.modal-work__content -->
+        </div><!--/.modal-work -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+<div class="modal" id="modal_project_3">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="C:\Users\79098\Desktop\финальный\images/close.png" alt="Close">
+        </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src='C:\Users\79098\Desktop\финальный\images/Портфолио.jpg' alt="">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="C:\Users\79098\Desktop\финальный\images/Портфолио 2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Портфолио</h3>
+                    <div class="modal-work__info">
+                        Сайты <span class="modal-work__info-divider">|</span> 2022
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Описание:</div>
+                    <div class="modal-work__client-company"></div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p> Верстка сайта-портфолио с нуля используя HTML, препроцессор LESS и Adobe Photoshop.Макет сайта взят с интернета и переделан под мои нужды. Модальные окна и слайдер в них работает с помощью jquery.Также слайдет взят с источника "slick"</p>
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/back.svg" height="11" alt="">
+                        Назад
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Далее
+                        <img src="images/next.svg" height="11" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /.modal-work__content -->
+        </div><!--/.modal-work -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+<div class="modal" id="modal_project_4">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="C:\Users\79098\Desktop\финальный\images/close.png" alt="Close">
+        </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src='C:\Users\79098\Desktop\финальный\images/первый сайт.jpg' alt="">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="C:\Users\79098\Desktop\финальный\images/код первого.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Первый сайт</h3>
+                    <div class="modal-work__info">
+                        Сайты <span class="modal-work__info-divider">|</span> 2022
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Описание:</div>
+                    <div class="modal-work__client-company"></div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p>Буквально год назад я начал изучать html/css и разработал свой первый сайт. Сайт со стихотворениями. </p>
+                    <p> Написан с инструкцией давнего времени, код уже старенький
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/back.svg" height="11" alt="">
+                        Назад
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Далее
+                        <img src="images/next.svg" height="11" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /.modal-work__content -->
+        </div><!--/.modal-work -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+<div class="modal" id="modal_project_5">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="C:\Users\79098\Desktop\финальный\images/close.png" alt="Close">
+        </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src='C:\Users\79098\Desktop\финальный\images/игра.jpg' alt="">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="C:\Users\79098\Desktop\финальный\images/код игры.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">"ИГРА BUBLLE JUMP BY LEXA"</h3>
+                    <div class="modal-work__info">
+                        Приложения <span class="modal-work__info-divider">|</span> 2021
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Описание:</div>
+                    <div class="modal-work__client-company"></div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p> Мини игра по типу "Dudle jump". Успевай прыгать, а то деревяшки прихлопнут тебя!!!
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/back.svg" height="11" alt="">
+                        Назад
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Далее
+                        <img src="images/next.svg" height="11" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /.modal-work__content -->
+        </div><!--/.modal-work -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+<div class="modal" id="modal_project_6">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="C:\Users\79098\Desktop\финальный\images/close.png" alt="Close">
+        </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src='C:\Users\79098\Desktop\финальный\images/много пре1.jpg' alt="">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="C:\Users\79098\Desktop\финальный\images/превью 2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Превью для блогеров</h3>
+                    <div class="modal-work__info">
+                        Дизайн <span class="modal-work__info-divider">|</span> 2022
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Описание:</div>
+                    <div class="modal-work__client-company"></div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p>Все работы сделаны в программе Adobe Photoshop CS6 и при помощи графического планшета. Если вам нравяться работы, пишите в телеграм.  </p>
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/back.svg" height="11" alt="">
+                        Назад
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Далее
+                        <img src="images/next.svg" height="11" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /.modal-work__content -->
+        </div><!--/.modal-work -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+<div class="modal" id="modal_project_7">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="C:\Users\79098\Desktop\финальный\images/close.png" alt="Close">
+        </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src='C:\Users\79098\Desktop\финальный\images/лого.jpg' alt="">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="C:\Users\79098\Desktop\финальный\images/лого 2.jpg" alt="">
+                        </div>
+                    <div>
+                        <img class="modal-work__photo" src="C:\Users\79098\Desktop\финальный\images/лого 3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Логотипы</h3>
+                    <div class="modal-work__info">
+                        Дизайн <span class="modal-work__info-divider">|</span> 2022
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Описание:</div>
+                    <div class="modal-work__client-company"></div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p>1 работа(бренд одежды):</p>
+                     1. сделано за 1 минуту<br>
+                      2. сделано за час<br>
+                      3. сделано за день<br>
+                      <br>
+                     <p>2 работа:</p>
+                     Клиент попросил сделать лого для своего магазина в разных стилях <p>
+                     <br>
+                     <p>3 работа:</p>
+                     
+                     ВСЕ ЛОГОТИПЫ ДЛЯ ИМЁН
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/back.svg" height="11" alt="">
+                        Назад
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Далее
+                        <img src="images/next.svg" height="11" alt="">
+                    </button>
+                    
+                </div>
+
+            </div><!-- /.modal-work__content -->
+        </div><!--/.modal-work -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+<div class="modal" id="modal_project_8">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="C:\Users\79098\Desktop\финальный\images/close.png" alt="Close">
+        </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src='C:\Users\79098\Desktop\финальный\images/2 картина.jpg' alt="">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="C:\Users\79098\Desktop\финальный\images/3 картина.jpg" alt="">
+                        </div>
+                    <div>
+                         <img class="modal-work__photo" src="C:\Users\79098\Desktop\финальный\images/4 картина.jpg" alt="">
+                         </div>
+                    <div>
+                         <img class="modal-work__photo" src="C:\Users\79098\Desktop\финальный\images/5 картина.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Иллюстрации/Рисунки</h3>
+                    <div class="modal-work__info">
+                        Дизайн <span class="modal-work__info-divider">|</span> 2022
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Описание:</div>
+                    <div class="modal-work__client-company"></div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p>Для написания данных "картин" понадобилось очень много времени и практики. Но итог вы видите </p>
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/back.svg" height="11" alt="">
+                        Назад
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Далее
+                        <img src="images/next.svg" height="11" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /.modal-work__content -->
+        </div><!--/.modal-work -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal" id="modal_resume">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="C:\Users\79098\Desktop\финальный\images/close.png" alt="Close">
+        </button>
+
+        <div class="modal__content">
+            <h3 class="modal__title  text-center">Резюме</h3>
+
+            <div class="text-center">
+                <a class="btn btn--thin" href="#">Скачать в PDF</a>
+                <a class="btn btn--thin" href="#">Скачать</a>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline__col  timeline__col--left">
+                    <h4 class="timeline__title">Деятельность</h4>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2019">2021</time>
+                        <h5 class="timeline__subtitle">Фрилансер</h5>
+                        <div class="timeline__position">Дизайнер</div>
+                        <div class="timeline__text">
+                            <p>В данной сфере работаю 2 года. Обладаю опытом разработки логотипов и фирменных стилей, для различных видов деятельности. От строительных компаний, до салонов красоты.</p>
+                    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline__col  timeline__col--right">
+                    <h4 class="timeline__title">Образование</h4>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2019">2021 - 2025</time>
+                        <h5 class="timeline__subtitle">ГПОАУ ОА АПК</h5>
+                        <div class="timeline__position">Благовещенск</div>
+                    </div>
+
+                    <h4 class="timeline__title">Опыт</h4>
+                    <div class="progress-bar">
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">Phyton       </div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 28%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">Photoshop</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title"> HTML, CSS</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 40%;"></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">Unity           </div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 30%;"></div>
+                                    </div>
+                            </div>
+                        </div>
+                                    
+                    </div><!-- /.progress-bar -->
+
+                </div><!-- /.timeline__col -->
+
+            </div><!-- /.timeline -->
+
+            <div class="text-center">
+                <a class="btn" href="#">Напиши мне</a>
+            </div>
+
+        </div><!-- /.modal__content -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal" id="modal_hire_me">
+    <div class="modal__dialog  modal__dialog--sm">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="C:\Users\79098\Desktop\финальный\images/close.png" alt="Close">
+        </button>
+
+        <div class="contact">
+            <div class="contact__left">
+                <h3 class="modal__title mb-0">НАПИШИ МНЕ!</h3>
+                <h4 class="modal__subtitle">Или позвони, задавай вопрос!</h4>
+
+                <ul class="contact__info">
+                    <li class="contact__info-item">
+                        <img class="contact__info-icon" src="images/phone.svg" alt="">
+                        +7 (909) 817 10 68
+                    </li>
+                    <li class="contact__info-item">
+                        <img class="contact__info-icon" src="images/mail.svg" alt="">
+                        aarto1149@gmail.com
+                    </li>
+                </ul>
+
+                <form class="form" action="/" method="post">
+                    <div class="form__group">
+                        <label class="form__label" for="input-email">E-mail</label>
+                        <input class="form__input" name="input-email" type="text" id="input-email" placeholder="Напиши e-mail...">
+                    </div>
+
+                    <div class="form__group">
+                        <label class="form__label" for="input-text">Обращение</label>
+                        <textarea class="form__textarea" name="input-text" id="input-text" placeholder="Что хотел?..."></textarea>
+                    </div>
+
+                    <div class="text-right">
+                        <button class="btn" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div><!-- /.contact__left -->
+        </div><!-- /.contact -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+
+
+<!-- JS -->
+<script src="js/slick.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
